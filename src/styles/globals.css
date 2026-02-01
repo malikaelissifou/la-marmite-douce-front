@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Allura&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --elegant-cream: #FAF8F3;
+  --elegant-gold: #D4AF37;
+  --elegant-orange: #FF6B35;
+  --elegant-green: #2D5F3F;
+  --elegant-brown: #81613C;
+  --dark-bg: #1A1A1A;
+  --text-dark: #2D2D2D;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    font-family: 'Lato', sans-serif;
+    background: var(--elegant-cream);
+    color: var(--text-dark);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(-45deg, #FAF8F3, #F5E6D3, #E8DCC8, #FAF8F3);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .glass-card {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.75) 100%
+    );
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.08),
+      0 2px 8px rgba(212, 175, 55, 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      var(--elegant-gold) 0%,
+      var(--elegant-orange) 50%,
+      var(--elegant-gold) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-flow 4s ease infinite;
+  }
+
+  @keyframes gradient-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .blob-shape {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: blob-morph 8s ease-in-out infinite;
+  }
+
+  @keyframes blob-morph {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+  }
+
+  .text-elegant-brown {
+    color: var(--elegant-brown);
+  }
+
+  .text-elegant-gold {
+    color: var(--elegant-gold);
+  }
+
+  .text-elegant-green {
+    color: var(--elegant-green);
+  }
+
+  .bg-elegant-gold {
+    background-color: var(--elegant-gold);
+  }
+
+  .border-elegant-gold {
+    border-color: var(--elegant-gold);
+  }
+
+  .cormorant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .allura {
+    font-family: 'Allura', cursive;
+  }
+}

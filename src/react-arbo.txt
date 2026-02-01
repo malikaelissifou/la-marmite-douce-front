@@ -1,0 +1,80 @@
+Structure du dossier
+Le num‚ro de s‚rie du volume est FEB3-2763
+C:.
+|   App.tsx
+|   Attributions.md
+|   index.css
+|   main.tsx
+|   react-arbo.txt
+|   
++---components
+|   |   AboutSection.tsx
+|   |   ContactSection.tsx
+|   |   Footer.tsx
+|   |   GallerySection.tsx
+|   |   Hero.tsx
+|   |   MenuModal.tsx
+|   |   MenuSection.tsx
+|   |   Navbar.tsx
+|   |   OrderModal.tsx
+|   |   ReservationModal.tsx
+|   |   
+|   +---figma
+|   |       ImageWithFallback.tsx
+|   |       
+|   \---ui
+|           accordion.tsx
+|           alert-dialog.tsx
+|           alert.tsx
+|           aspect-ratio.tsx
+|           avatar.tsx
+|           badge.tsx
+|           breadcrumb.tsx
+|           button.tsx
+|           calendar.tsx
+|           card.tsx
+|           carousel.tsx
+|           chart.tsx
+|           checkbox.tsx
+|           collapsible.tsx
+|           command.tsx
+|           context-menu.tsx
+|           dialog.tsx
+|           drawer.tsx
+|           dropdown-menu.tsx
+|           form.tsx
+|           hover-card.tsx
+|           input-otp.tsx
+|           input.tsx
+|           label.tsx
+|           menubar.tsx
+|           navigation-menu.tsx
+|           pagination.tsx
+|           popover.tsx
+|           progress.tsx
+|           radio-group.tsx
+|           resizable.tsx
+|           scroll-area.tsx
+|           select.tsx
+|           separator.tsx
+|           sheet.tsx
+|           sidebar.tsx
+|           skeleton.tsx
+|           slider.tsx
+|           sonner.tsx
+|           switch.tsx
+|           table.tsx
+|           tabs.tsx
+|           textarea.tsx
+|           toggle-group.tsx
+|           toggle.tsx
+|           tooltip.tsx
+|           use-mobile.ts
+|           utils.ts
+|           
++---guidelines
+|       Guidelines.md
+|       
+\---styles
+        globals.css
+        
